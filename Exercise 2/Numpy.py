@@ -74,8 +74,8 @@ print(A[0,1])
 
 #The three-dimensional array is cut with three indexes, respectively.
 #A negative index works in the same way as with lists, i.e. it counts from the end. A colon is used to cut an entire row or column. E.g.
-print(A[:,0]) # fisrt column, ":"reads all rows
-print(A[0,:]) # first row, ":" read all columns
+print(A[:,0]) # fisrt row, ":"reads all rows
+print(A[0,:]) # first column, ":" read all columns
 
 #The colon can also be used to create index spaces with the start: end: step syntax, so that the intersection no longer targets the end. The index spacing can be used to index both rows and columns. E.g.
 A = np.array([1,2,3,4,5,6,7,8,9])
@@ -191,3 +191,5 @@ print(X)
 #If necessary, the inverse matrix is ​​determined by the command inv () and can be used to check that the solution is correct.
 Ainv = np.linalg.inv(A)
 print(np.matmul(Ainv,b))
+
+
