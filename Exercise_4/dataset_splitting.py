@@ -19,9 +19,6 @@ df = pd.read_csv(filepath,skiprows=0,delimiter=",")
 # So we would like to investigate it CGPA can be used to predict the chance of
 #  a person to be admitted to university.
 
-#x = dataset.iloc[:,:-1].values
-#y = dataset.iloc[:,-1].values
-#Kokeile yo.
 X = df[['CGPA']]
 y = df[['Chance of Admit ']]
 

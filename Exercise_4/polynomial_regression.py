@@ -13,13 +13,15 @@ data_pd = pd.read_csv(filepath,skiprows=0,names=["x","y"])
 
 xpd = np.array(data_pd[["x"]])
 ypd = np.array(data_pd[["y"]])
+print(xpd)
 n = xpd.size
-
+print("n: ", n)
 xbar = np.mean(xpd)
 ybar = np.mean(ypd)
 
 xpd = xpd.reshape((n,))
 ypd = ypd.reshape((n,))
+print(xpd)
 
 #Next we compute the five sums appearing above
 

@@ -13,6 +13,7 @@ my_data = np.genfromtxt(filepath, delimiter=',')
 #Read in data and convert it into 2D arrays
 xp = my_data[:,0]
 yp = my_data[:,1]
+print(xp)
 xp = xp.reshape(-1,1)
 yp = yp.reshape(-1,1)
 
